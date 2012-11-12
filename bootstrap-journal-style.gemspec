@@ -4,7 +4,7 @@ Gem::Specification.new do |s|
   s.date = "2012-11-12"
 
   # Gem Details
-  s.name = "boostrap-journal-style"
+  s.name = "bootstrap-journal-style"
   s.authors = ["Panagiotis Panagi"]
   s.summary = ""
   s.description = ""
@@ -12,10 +12,12 @@ Gem::Specification.new do |s|
   s.homepage = "http://www.dynopia.com/"
 
   # Gem Files
-  s.files = %w(README.mkdn)
+  s.files = %w(README)
   s.files += Dir.glob("lib/**/*.*")
   s.files += Dir.glob("stylesheets/**/*.*")
   s.files += Dir.glob("templates/**/*.*")
+
+  s.require_paths     = ["lib"]
 
   # Gem Bookkeeping
   s.add_dependency("compass", [">= 0.11"])
